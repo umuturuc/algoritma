@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int haftaningunleri;
+
+    do {
+        printf(" Pazartesi=1  \n Sali=2 \n Carsamba=3\n Persembe=4 \n Cuma=5 \n Cumartesi=6 \n Pazar=7 \n Istediginiz haftanin gununu seciniz: ");
+        scanf("%d", &haftaningunleri);
+
+        switch (haftaningunleri) {
+            case 1:
+                printf("Pazartesi\n");
+                break;
+            case 2:
+                printf("Sali\n");
+                break;
+            case 3:
+                printf("Carsamba\n");
+                break;
+            case 4:
+                printf("Persembe\n");
+                break;
+            case 5:
+                printf("Cuma\n");
+                break;
+            case 6:
+                printf("Cumartesi\n");
+                break;
+            case 7:
+                printf("Pazar\n");
+                break;
+            default:
+                printf("HAFTADA 7 GUN VAR TEKRAR GIRINIZ :\n");
+        }
+    } while (haftaningunleri < 1 || haftaningunleri > 7);
+
+    return 0;
+}
