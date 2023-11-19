@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+    int N,terimx=0 , terimy=1 ,terimz;
+   printf("Bir terim sayisi giriniz : ");
+   scanf("%d",&N);
+   
+   if(N<=0)
+   {
+    printf("0'dan küçük olamaz başka bir sayi dene");
+    scanf("%d",N)
+   }
+    printf("Fibonnaci Serisi : ");
+   
+    
+   for(int i = 1; i<=N; ++i)
+   {
+    printf("%d ", terimx);
+    terimx=terimy+terimz;
+    terimx=terimy;
+    terimy=terimz;
+
+
+   }
+    return 0;
+   
+}
